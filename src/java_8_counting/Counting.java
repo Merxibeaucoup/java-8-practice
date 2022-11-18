@@ -21,9 +21,8 @@ public class Counting {
 				"apple", "apple", "melon", "apple", "apple", "melon", "banana", "apple",
 				"melon", "orange", "orange", "banana", "melon", "papaya", "melon", "lemon");
 		
-		Map<String, Long> count = items
-									.stream()
-									.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+		Map<String, Long> count = items.stream()
+				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
 		
 		System.out.println(count);
 

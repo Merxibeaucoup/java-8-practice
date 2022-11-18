@@ -43,8 +43,7 @@ public class ItemMain {
 		
 		System.out.println("--------------------------");
 		Map<String, Long> counting = items.stream()
-										.collect(
-										Collectors.groupingBy(Item::getName, Collectors.counting()));
+				.collect(Collectors.groupingBy(Item::getName, Collectors.counting()));
 		
 		
 
@@ -62,8 +61,7 @@ public class ItemMain {
 		
 		System.out.println("--------------------------");
 		Map<String, Integer> sum = items.stream()
-										.collect(
-										Collectors.groupingBy(Item::getName, Collectors.summingInt(Item::getQuantity)));
+				.collect(Collectors.groupingBy(Item::getName, Collectors.summingInt(Item::getQuantity)));
 
 		System.out.println("--------------------------");
 		System.out.println(sum);
