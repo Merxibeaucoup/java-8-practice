@@ -29,16 +29,30 @@ public class SortLambda {
 		
 		
 		
-		//simple loop for soccer class 
+		//for loop for soccer class 
 		int i =1;
 		for (Soccer player : list) {
 			System.out.println("@ "+i+" : "+player.getName()+" "+player.getAge()+" "+player.getPrice()+" ");
 			i++;
 		}
-
-
-
 		
+		//lambda 
+		System.out.println("\n Sorting for age ----------------------------\n");
+				list.sort((Soccer o1, Soccer o2) -> o1.getAge() - o2.getAge());
+				list.forEach((player) -> System.out.println(player.getAge()+" "+player.getName()+" "+player.getPrice()));
+
+
+
+		System.out.println("\n Sorting for name ----------------------------\n");
+				list.sort((Soccer o1, Soccer o2) -> o1.getName().compareTo(o2.getName()));
+				list.forEach((player) -> System.out.println(player.getName()+" "+player.getAge()+" "+player.getPrice()));
+				
+		
+		System.out.println("\n Sorting for price ----------------------------\n");
+				list.sort((Soccer o1, Soccer o2) -> o1.getPrice().compareTo(o2.getPrice()));
+				list.forEach((player) -> System.out.println(player.getPrice()+" "+player.getAge()+" "+player.getName()));
+		
+
 
 	}
 
