@@ -30,7 +30,7 @@ public class Strings_ForEach_and_List {
 		//output : HenryJacobsElliotEdwardsSaquanEtienneMcCaffery 
 		 items.forEach(System.out::print);
 		 
-		// output : haydar
+		// output : Edwards
 			items.forEach(item->{
 				if("Edwards".equals(item)){
 					System.out.println(item); 	
