@@ -21,7 +21,31 @@ public class Strings_ForEach_and_List {
 			System.out.print(item+" "); 
 		}
 		System.out.println("\n-----------------------\n");
-
+		
+		//output : Henry Jacobs Elliot Edwards Saquan Etienne McCaffery 
+		 items.forEach(item -> System.out.print(item + " "));		 
+		 System.out.println("\n-----------------------\n");
+		 
+		 
+		//output : HenryJacobsElliotEdwardsSaquanEtienneMcCaffery 
+		 items.forEach(System.out::print);
+		 
+		// output : haydar
+			items.forEach(item->{
+				if("Edwards".equals(item)){
+					System.out.println(item); 	
+				}
+			});
+			
+			System.out.println("\n-----------------------\n");
+			
+			List<String> alphaUpper = new ArrayList<>();
+			for (String s : items) {
+			    alphaUpper.add(s.toUpperCase());
+			}
+			
+			System.out.println(items); 	// output : [Henry, Jacobs, Elliot, Edwards, Saquan, Etienne, McCaffery]
+			System.out.println(alphaUpper); // output : [HENRY, JACOBS, ELLIOT, EDWARDS, SAQUAN, ETIENNE, MCCAFFERY]
 
 	}
 
