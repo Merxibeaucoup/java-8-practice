@@ -15,6 +15,7 @@ public class Strings_ForEach_and_List {
 		items.add("Saquan");
 		items.add("Etienne");
 		items.add("McCaffery");
+		items.add("Foreman");
 		
 		//output : Henry Jacobs Elliot Edwards Saquan Etienne McCaffery 
 		for(String item : items){
