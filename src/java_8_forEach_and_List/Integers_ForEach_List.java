@@ -50,6 +50,7 @@ public class Integers_ForEach_List {
 				
 				// output : list : [12, 21, 34, 46, 52, 61, 72, 86, 93, 10]
 				int[] number = {12, 21, 34, 46, 52, 61, 72, 86, 93, 10};
+				
 		        	List<Integer> list = Arrays.stream(number).boxed().collect(Collectors.toList());
 		       		System.out.println("list : " + list);  
 
