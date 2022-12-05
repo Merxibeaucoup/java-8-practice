@@ -2,6 +2,7 @@ package java_8_forEach_and_List;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Strings_ForEach_and_List {
 
@@ -47,6 +48,13 @@ public class Strings_ForEach_and_List {
 			
 			System.out.println(items); 	// output : [Henry, Jacobs, Elliot, Edwards, Saquan, Etienne, McCaffery]
 			System.out.println(alphaUpper); // output : [HENRY, JACOBS, ELLIOT, EDWARDS, SAQUAN, ETIENNE, MCCAFFERY]
+			
+			
+			//java 8 
+			
+			List<String> collect = items.stream().map(String::toUpperCase).collect(Collectors.toList());
+			
+			System.out.println(collect);
 
 	}
 
