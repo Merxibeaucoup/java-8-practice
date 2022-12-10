@@ -43,7 +43,7 @@ public class Stream_set_flatmap_main {
 		
 		List<String> collect = list.stream()
 				.map(x -> x.getBook()) // Stream<Set<String>>
-				.flatMap(x -> x.stream()) // Stream<String>
+				.flatMap(x -> x.stream()) // Stream<String> basically combines both lists
 				.distinct() // unique books occurrence
 				.collect(Collectors.toList());
 		
