@@ -36,7 +36,7 @@ public class Filter_collect_or_null {
 				.orElse(null);                                 // If found , return found else return null
 		
 		
-		System.out.println(output2);
+		System.out.println(output2); //null
 		
 		
 
