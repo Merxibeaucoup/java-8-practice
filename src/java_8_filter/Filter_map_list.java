@@ -39,7 +39,21 @@ public class Filter_map_list {
 				.map(Car::getName)				//consists of car names
 				.collect(Collectors.toList());
 		
+		
 		System.out.println("List of cars :" + list);	// List of cars :[Porsche, BMW, Jeep, Honda, Mercedes]
+		
+		
+		
+		list.forEach(System.out::println);
+		
+		//output 
+		/*
+		Porsche
+		BMW
+		Jeep
+		Honda
+		Mercedes
+		 */
 		
 		
 		
