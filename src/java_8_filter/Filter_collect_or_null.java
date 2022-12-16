@@ -29,14 +29,24 @@ public class Filter_collect_or_null {
 		
 		
 		
-		
 		Car output2 = car.stream()
+				.filter((p) -> "Jeep".equals(p.getName()) && "Wrangler".equals(p.getModel()))  //match both name and model
+				.findAny()
+				.orElse(null);
+
+			System.out.println("car : " + output2.getModel() +"," + output2.getName());  // Wrangler,Jeep
+		
+		
+		
+		
+		
+		Car output3 = car.stream()
 				.filter(x -> "Toyota".equals(x.getName()))
 				.findAny()                                      //filter for Toyota only
 				.orElse(null);                                 // If found , return found else return null
 		
 		
-		System.out.println(output2); //null
+		System.out.println(output3); //null
 		
 		
 
